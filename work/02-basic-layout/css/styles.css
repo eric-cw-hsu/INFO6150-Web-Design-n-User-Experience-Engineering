@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+}
+
+div#homepage {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: plum;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+nav.primary-nav {
+  width: 100%;
+  height: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+nav.local-menu {
+  grid-area: sidebar;
+  background-color: pink;
+  border-right: 1px solid black;
+}
+
+nav.local-menu ul {
+  list-style-type: none;
+  padding: 10px;
+  padding-right: 0px;
+}
+
+nav.local-menu ul li {
+  margin-bottom: 10px;
+}
+
+nav.local-menu ul li:hover {
+  background-color: plum;
+}
+
+nav.local-menu ul li a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+main {
+  grid-area: main;
+  background-color: pink;
+  padding-left: 20px;
+}
+
+footer {
+  height: 50px;
+  grid-area: footer;
+  background-color: plum;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+footer a {
+  margin-left: 5px;
+}
+
+ul.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu li {
+  height: 100%;
+}
+
+ul.menu li a {
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+ul.menu li:hover {
+  background-color: rebeccapurple;
+}
+
+ul.menu li:hover a {
+  color: white;
+}
