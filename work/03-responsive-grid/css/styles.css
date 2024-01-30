@@ -1,0 +1,274 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0px 16px;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "header"
+    "nav-menu"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0px 0px 0px;
+  justify-content: space-between;
+  align-items: start;
+  gap: 16px;
+}
+
+.header-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-logo__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.header-title__h1 {
+  line-height: 70px;
+}
+
+.primary-nav {
+  width: 100%;
+  grid-area: nav-menu;
+}
+
+.primary-nav__ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 4px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 0px;
+  margin: 0;
+  list-style: none;
+}
+
+.primary-nav__a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 19.5px;
+  background-color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #581845;
+  border: 2px solid #581845;
+}
+
+.btn--primary {
+  background-color: #581845;
+  color: #fff;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card__a {
+  margin-top: 8px;
+  text-decoration: none;
+  color: #581845;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  padding: 4px 0px;
+  line-height: 16px;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px 8px 0px;
+  gap: 8px;
+}
+
+.secondary-nav {
+  width: 100%;
+  padding: 0px 16px;
+}
+
+.secondary-nav__ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 4px;
+}
+
+.secondary-nav__li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-nav__a {
+  width: 100%;
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright__p {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #7c7c7c;
+}
+
+@media screen and (min-width: 50rem) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    background-color: #581845;
+    gap: 8px;
+  }
+
+  .header-logo-title {
+    margin-left: 16px;
+  }
+
+  .header-title__h1 {
+    color: #fff;
+  }
+
+  .primary-nav {
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .primary-nav__ul {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+
+  .primary-nav__li {
+    width: 100%;
+  }
+
+  .primary-nav__a {
+    color: white;
+    background-color: #581845;
+    border: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 4px 0px;
+    border-radius: 0;
+  }
+
+  main {
+    align-items: start;
+    margin-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  .card-container {
+    padding-bottom: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    align-items: start;
+  }
+
+  .card__p {
+    height: 126px;
+    overflow-y: clip;
+  }
+
+  .card__a:hover {
+    background-color: #581845;
+    color: #fff;
+  }
+
+  footer {
+    padding: 8px 0px;
+    background-color: #581845;
+  }
+
+  .secondary-nav__ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .secondary-nav__a {
+    color: white;
+    background-color: #581845;
+  }
+}
