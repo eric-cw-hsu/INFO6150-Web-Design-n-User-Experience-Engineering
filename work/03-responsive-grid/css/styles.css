@@ -199,7 +199,6 @@ footer {
 
   header {
     background-color: #581845;
-    gap: 8px;
   }
 
   .header-logo-title {
@@ -212,31 +211,59 @@ footer {
 
   .primary-nav {
     box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .primary-nav__ul {
     grid-template-columns: repeat(3, 1fr);
     padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
   }
 
   .primary-nav__li {
     width: 100%;
   }
 
-  .primary-nav__a {
-    color: white;
+  .primary-nav__li:hover {
     background-color: #581845;
-    border: 0;
+    color: #fff;
+  }
+
+  .btn:hover {
+    background-color: #581845;
+    color: #fff;
+  }
+
+  .primary-nav__a {
+    color: #581845;
     display: flex;
     width: 100%;
     justify-content: center;
     padding: 4px 0px;
     border-radius: 0;
+    font-weight: 700;
+    padding: 8px 0px;
+  }
+
+  .btn {
+    border: 0;
+    border-left: 0.5px solid #581845;
+  }
+
+  .btn--primary {
+    background-color: #fff;
+    color: #581845;
   }
 
   main {
     align-items: start;
     margin-left: 16px;
+    margin-right: 16px;
     margin-bottom: 16px;
   }
 
@@ -251,6 +278,10 @@ footer {
   .card__p {
     height: 126px;
     overflow-y: clip;
+  }
+
+  .card__a {
+    border: 2px solid #581845;
   }
 
   .card__a:hover {
