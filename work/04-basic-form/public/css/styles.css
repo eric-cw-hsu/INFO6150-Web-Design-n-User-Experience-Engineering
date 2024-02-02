@@ -155,6 +155,16 @@ h2.form-title__h2 {
   border: 1px solid #7c7c7c;
 }
 
+.form-label-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-label-required__p {
+  font-style: bold;
+  color: red;
+}
+
 .form-submit {
   padding: 16px 0px;
 }

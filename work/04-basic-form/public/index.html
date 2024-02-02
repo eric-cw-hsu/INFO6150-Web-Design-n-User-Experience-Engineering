@@ -42,7 +42,12 @@
         <form class="form" action="/submit" method="post">
           <h2 class="form-title__h2">Register</h2>
           <div class="form-group">
-            <label class="form-label" for="name">Name</label>
+            <label class="form-label" for="name">
+              <div class="form-label-content">
+                Name
+                <div class="form-label-required__p">*</div>
+              </div> 
+            </label>
             <input
               class="form-input"
               type="text"
@@ -53,7 +58,12 @@
             />
           </div>
           <div class="form-group">
-            <label class="form-label" for="email">Email</label>
+            <label class="form-label" for="email">
+              <div class="form-label-content">
+                Email
+                <div class="form-label-required__p">*</div>
+              </div> 
+            </label>
             <input
               class="form-input"
               type="email"
@@ -78,7 +88,12 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="form-label" for="tier">Tier</label>
+            <label class="form-label" for="tier">
+              <div class="form-label-content">
+                Tier
+                <div class="form-label-required__p">*</div>
+              </div> 
+            </label>
             <select class="form-select" id="tier" name="tier" required>
               <option value="" disabled selected>Please select</option>
               <option value="1">Silver Tier</option>
