@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cats on the Internet</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header-logo-title">
+          <img
+            class="header-logo__img"
+            src="http://placekitten.com/70/70"
+            alt="A cat sit in the middle"
+          />
+          <h1 class="header-title__h1">Cats on the Internet</h1>
+        </div>
+        <img class="header-menu-icon__img" src="/images/menu-icon.svg" alt="Menu icon" />
+        <nav class="primary-nav">
+          <ul class="primary-nav__ul">
+            <li class="primary-nav__li">
+              <a class="primary-nav__a btn" href="/">Home</a>
+            </li>
+            <li class="primary-nav__li">
+              <a class="primary-nav__a btn" href="/about">About</a>
+            </li>
+            <li class="primary-nav__li">
+              <a class="primary-nav__a btn" href="/contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form class="form" action="/submit" method="post">
+          <h2 class="form-title__h2">Register</h2>
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+            <div></div>
+            <div class="form-check">
+              <input
+                class="form-checkbox"
+                type="checkbox"
+                id="annoy-me"
+                name="annoy-me"
+                value="1"
+                checked
+              />
+              <label class="form-label" for="annoy-me">
+                Do you want us to send you annoying emails?
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="tier">Tier</label>
+            <select class="form-select" id="tier" name="tier" required>
+              <option value="" disabled selected>Please select</option>
+              <option value="1">Silver Tier</option>
+              <option value="2">Gold Tier</option>
+              <option value="3">Platinum Tier</option>
+            </select>
+          </div>
+          <div class="form-submit">
+            <input class="btn btn--primary" type="submit" value="Register" />
+          </div>
+        </form>
+      </main>
+      <footer>
+        <nav class="secondary-nav">
+          <ul class="secondary-nav__ul">
+            <li class="secondary-nav__li">
+              <a class="secondary-nav__a btn" href="/privacy-policy"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="footer-copyright__p">
+          &copy; 2024 Eric Hsu All Rights Reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+

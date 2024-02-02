@@ -1,0 +1,305 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0px 16px;
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  flex-direction: row;
+  padding: 32px 0px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-logo__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.header-title__h1 {
+  line-height: 70px;
+}
+
+.header-menu-icon__img {
+  width: 28px;
+  height: 28px;
+}
+
+.primary-nav {
+  display: none;
+  width: 100%;
+}
+
+.primary-nav__ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 4px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 0px;
+  margin: 0;
+  list-style: none;
+}
+
+.primary-nav__a {
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 19.5px;
+  background-color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #581845;
+  border: 2px solid #581845;
+}
+
+.btn--primary {
+  background-color: #581845;
+  color: #fff;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title {
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 8px 16px 8px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+h2.form-title__h2 {
+  padding: 0;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+}
+
+.form-input {
+  height: 28px;
+  border-radius: 8px;
+  padding: 0px 12px;
+  border: 1px solid #7c7c7c;
+}
+
+.form-select {
+  height: 30px;
+  border-radius: 8px;
+  padding: 0px 8px;
+  border: 1px solid #7c7c7c;
+}
+
+.form-submit {
+  padding: 16px 0px;
+}
+
+.form-submit input {
+  width: 100%;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0px 8px 0px;
+  gap: 8px;
+}
+
+.secondary-nav {
+  width: 100%;
+  padding: 0px 16px;
+}
+
+.secondary-nav__ul {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 4px;
+}
+
+.secondary-nav__li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-nav__a {
+  width: 100%;
+  line-height: 0.875rem;
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright__p {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #a8a8a8;
+}
+
+@media screen and (min-width: 50rem) {
+  body {
+    padding: 0;
+  }
+
+  header {
+    background-color: #581845;
+  }
+
+  .header-logo-title {
+    margin-left: 16px;
+  }
+
+  .header-title__h1 {
+    color: #fff;
+  }
+
+  .header-menu-icon__img {
+    display: none;
+  }
+
+  .primary-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin-right: 16px;
+  }
+
+  .primary-nav__ul {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .primary-nav__li {
+    width: 100%;
+  }
+
+  .primary-nav__li:hover {
+    background-color: #581845;
+    color: #fff;
+  }
+
+  .btn:hover {
+    background-color: #581845;
+    color: #fff;
+  }
+
+  .primary-nav__a {
+    background-color: #581845;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 4px 0px;
+    border-radius: 0;
+    font-weight: 700;
+    padding: 8px 0px;
+  }
+
+  .btn--primary {
+    background-color: #fff;
+    color: #581845;
+  }
+
+  main {
+    padding: 16px;
+  }
+
+  .form {
+    width: auto;
+    padding: 32px;
+  }
+
+  .form-group {
+    grid-template-columns: 2fr 10fr;
+  }
+
+  footer {
+    padding: 8px 0px;
+    background-color: #581845;
+  }
+
+  .secondary-nav__a {
+    color: white;
+    background-color: #581845;
+    width: auto;
+  }
+}
