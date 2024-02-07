@@ -297,6 +297,7 @@ footer {
   }
 
   .form {
+    min-width: 35rem;
     width: auto;
     padding: 32px;
   }
