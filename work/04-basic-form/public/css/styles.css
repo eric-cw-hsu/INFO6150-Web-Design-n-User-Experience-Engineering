@@ -66,11 +66,6 @@ header {
   line-height: 70px;
 }
 
-.header-menu-icon__img {
-  width: 28px;
-  height: 28px;
-}
-
 .primary-nav {
   display: none;
   width: 100%;
@@ -239,10 +234,6 @@ footer {
 
   .header-title__h1 {
     color: #fff;
-  }
-
-  .header-menu-icon__img {
-    display: none;
   }
 
   .primary-nav {
