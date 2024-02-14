@@ -1,0 +1,13 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+
+  margin: 16px 32px;
+  gap: 1rem;
+}
+
+@media (max-width: 50rem) {
+  .content-container {
+    margin: 0px 32px 16px 32px;
+  }
+}
