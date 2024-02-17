@@ -1,0 +1,125 @@
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Intro</title>
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-logo-title">
+        <a class="header-logo__a" href="/">
+          <img
+            src="images/logo.avif"
+            alt="Cheetah Logo"
+            class="header-logo__img"
+          />
+        </a>
+        <h1>JS Intro</h1>
+      </div>
+      <div class="header-right">
+        <div class="header-country">
+          <button class="header-country__btn dropdown-btn" id="header-country__btn">
+            <img
+              src="images/US-flag.avif"
+              alt="United States Flag"
+              class="header-country__img"
+            />
+          <p>United States</p>
+          </button>
+          <div class="header-country-dropdown" id="header-country-dropdown">
+            <ul class="header-country__ul">
+              <li class="header-country__li"><p>United States</p></li>
+            </ul>
+          </div>
+        </div>
+        <nav class="primary-nav">
+          <button class="primary-nav__btn dropdown-btn" id="primary-nav__btn">
+            <p>
+              Menu
+            </p>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.75745 10.5858L9.17166 9.17154L12.0001 12L14.8285 9.17157L16.2427 10.5858L12.0001 14.8284L7.75745 10.5858Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21Z" fill="currentColor" /></svg>
+          </button>
+          <div class="primary-nav__dropdown" id="primary-nav__dropdown">
+            <ul class="primary-nav__ul">
+              <div class="primary-nav-group">
+                <li class="primary-nav__li"><p class="primary-nav-subtitle">Page</p></li>
+                <li class="primary-nav__li"><a href="/">Home</a></li>
+                <li class="primary-nav__li"><a href="/about.html">About</a></li>
+                <li class="primary-nav__li"><a href="/contact.html">Contact me</a></li>
+              </div>
+              <div class="primary-nav-group">
+                <li class="primary-nav__li"><p class="primary-nav-subtitle">Account</p></li>
+                <li class="primary-nav__li"><a href="/login.html">Login</a></li>
+                <li class="primary-nav__li"><a href="/register.html">Register</a></li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-title">
+        <h2 class="main-title__h2">Welcome to Cheetah</h2>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <h3 class="card__title">About Cheetah</h3>
+          <img
+            src="images/cheetah1.avif"
+            alt="A cheetah in the wild"
+            class="card__img"
+          />
+          <p class="card-description__p">
+            The cheetah (Acinonyx jubatus) is a large cat and the fastest land animal. It has a tawny to creamy white or pale buff fur that is marked with evenly spaced, solid black spots. The head is small and rounded, with a short snout and black tear-like facial streaks. It reaches 67–94 cm (26–37 in) at the shoulder, and the head-and-body length is between 1.1 and 1.5 m (3 ft 7 in and 4 ft 11 in). Adults weigh between 21 and 72 kg (46 and 159 lb). The cheetah is capable of running at 93 to 104 km/h (58 to 65 mph);[3][4] it has evolved specialized adaptations for speed, including a light build, long thin legs and a long tail.
+          </p>
+          <a 
+            href="https://en.wikipedia.org/wiki/Cheetah"
+            class="btn btn--light"
+          > Read More </a>
+        </div>
+        <div class="card">
+          <h3 class="card__title">A cheetah in the wild</h3>
+          <img
+            src="images/cheetah2.avif"
+            alt="A cheetah running"
+            class="card__img"
+          />
+          <p class="card-description__p">
+            The vernacular name "cheetah" is derived from Hindustani Urdu: چیتا and Hindi: चीता (ćītā).[5] This in turn comes from Sanskrit: चित्रय (Chitra-ya) meaning 'variegated', 'adorned' or 'painted'.[6] In the past, the cheetah was often called "hunting leopard" because they could be tamed and used for coursing.[7] The generic name Acinonyx probably derives from the combination of two Greek words: ἁκινητος (akinitos) meaning 'unmoved' or 'motionless', and ὄνυξ (onyx) meaning 'nail' or 'hoof'.[8] A rough translation is "immobile nails", a reference to the cheetah's limited ability to retract its claws.[9] A similar meaning can be obtained by the combination of the Greek prefix a– (implying a lack of) and κῑνέω (kīnéō) meaning 'to move' or 'to set in motion'.[10] The specific name jubatus is Latin for 'crested, having a mane'.[11]
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Cheetah#Etymology" class="btn btn--light"> Read More </a>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Cub</h3>
+          <img
+            src="images/cheetah3.avif"
+            alt="A cheetah cub biting a stick"
+            class="card__img"
+          />
+          <p class="card-description__p">
+            The diploid number of chromosomes in the cheetah is 38, the same as in most other felids.[47] The cheetah was the first felid observed to have unusually low genetic variability among individuals,[48] which has led to poor breeding in captivity, increased spermatozoal defects, high juvenile mortality and increased susceptibility to diseases and infections.[49][50] A prominent instance was the deadly feline coronavirus outbreak in a cheetah breeding facility of Oregon in 1983 which had a mortality rate of 60%—higher than that recorded for previous epizootics of feline infectious peritonitis in any felid.[51] The remarkable homogeneity in cheetah genes has been demonstrated by experiments involving the major histocompatibility complex (MHC); unless the MHC genes are highly homogeneous in a population, skin grafts exchanged between a pair of unrelated individuals would be rejected. Skin grafts exchanged between unrelated cheetahs are accepted well and heal, as if their genetic makeup were the same.
+          </p>
+          <a 
+            href="https://en.wikipedia.org/wiki/Cheetah#Phylogeny_and_evolution" 
+            class="btn btn--light"
+          > 
+            Read More 
+          </a>
+        </div>
+
+    </main>
+    <footer>
+      <p class="footer-copyright__p">
+        Cheng-Wen (Eric) Hsu &copy; 2024
+      </p>
+    </footer>
+  </div>
+  
+
+
+  <script src="/index.js"></script>
+</body>
+
+</html>
