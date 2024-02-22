@@ -7,7 +7,11 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, p, a {
+h1,
+h2,
+h3,
+p,
+a {
   color: white;
   margin: 0;
 }
@@ -26,7 +30,6 @@ a {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: "header" "main" "footer";
-
 
   height: 100vh;
 }
@@ -115,14 +118,14 @@ main {
 }
 
 .primary-nav__btn {
-  padding: 8px 16px;  
+  padding: 8px 16px;
 }
 
 .dropdown-btn {
   background-color: rgb(40, 40, 40);
   border: none;
   color: white;
-  
+
   font-size: 1rem;
   display: flex;
   flex-direction: row;
@@ -135,7 +138,7 @@ main {
   border-radius: 8px;
   padding: 8px;
   background-color: rgb(20, 20, 20);
-  height: fit-content
+  height: fit-content;
 }
 
 .primary-nav__dropdown {
@@ -174,7 +177,11 @@ main {
 
 .primary-nav__li a:hover {
   border-radius: 8px;
-  background-color: rgb(60, 60, 60)
+  background-color: rgb(60, 60, 60);
+}
+
+.show {
+  display: block;
 }
 
 .main-title {
@@ -297,7 +304,6 @@ footer {
     width: 100%;
   }
 
-
   .header-country {
     display: none;
   }
@@ -323,3 +329,4 @@ footer {
     left: 0;
   }
 }
+

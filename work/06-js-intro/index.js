@@ -1,40 +1,16 @@
 "use strict";
 
-const openPrimaryNavDropdownList = () => {
-  document.getElementById('primary-nav__dropdown').style.display = 'block';
-}
+(function () {
+  // event listeners for button
+  document.querySelector("#primary-nav__btn").addEventListener("click", () => {
+    document.querySelector("#primary-nav__dropdown").classList.toggle("show");
+  });
 
-const closePrimaryNavDropdownList = () => {
-  document.getElementById('primary-nav__dropdown').style.display = 'none';
-}
+  document.querySelector("#header-country__btn").addEventListener("click", () => {
+    document.querySelector("#header-country-dropdown").classList.toggle("show");
+  });
 
-
-const openClosePrimaryNavDropdownList = () => {
-  if (document.getElementById('primary-nav__dropdown').style.display === 'block') {
-    closePrimaryNavDropdownList()
-  } else {
-    openPrimaryNavDropdownList()
-  }
-}
-
-const openCountryDropdownList = () => {
-  document.getElementById('header-country-dropdown').style.display = 'block';
-}
-
-const closeCountryDropdownList = () => {
-  document.getElementById('header-country-dropdown').style.display = 'none';
-}
-
-const openCloseCountryDropdownList = () => {
-  if (document.getElementById('header-country-dropdown').style.display === 'block') {
-    closeCountryDropdownList()
-  } else {
-    openCountryDropdownList()
-  }
-}
-
-// event listener for button
-document.getElementById("primary-nav__btn").addEventListener("click", openClosePrimaryNavDropdownList);
-document.getElementById("header-country__btn").addEventListener("click", openCloseCountryDropdownList);
-
-document.getElementById('header-country__btn').addEventListener("blur", closeCountryDropdownList);
+  document.querySelector("#header-country__btn").addEventListener("blur", () => {
+    document.querySelector("#header-country-dropdown").classList.remove("show");
+  });
+})();
