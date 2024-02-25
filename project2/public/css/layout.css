@@ -1,0 +1,155 @@
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+p, a{
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  background-color: burlywood;
+}
+
+.header-logo-title {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-logo__link {
+  width: 100px;
+  height: 100px;
+}
+
+.header-logo__img {
+  width: 100px;
+  height: 100px;
+}
+
+.skip__link {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip__link:focus {
+  position: absolute;
+  top: 0;
+  left: 50vw;
+  width: auto;
+  height: auto;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.primary-nav__btn {
+  display: none;
+}
+
+.primary-nav__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-nav__link {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.primary-nav__link:hover {
+  color: white;
+  background-color: dodgerblue;
+}
+
+main {
+  background-color: papayawhip;
+}
+
+
+footer {
+  background-color: burlywood;
+}
+
+.footer-nav__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 2rem;
+  margin: 0;
+}
+
+@media (max-width: 44rem){
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .primary-nav {
+    display: inline-block;
+    align-items: end;
+    justify-content: end;
+  }
+  
+  .primary-nav__btn {
+    display: block;
+    background-color: burlywood;
+    border: none;
+    margin: 0.5rem;
+  }
+
+  .primary-nav__list {
+    display: none;
+    background-color: burlywood;
+    position: absolute;
+    padding: 0;
+    right: 0;
+  }
+
+  .primary-nav__list--active {
+    display: block;
+  }
+
+  .primary-nav__link {
+    width: fit-content;
+  }
+
+  .footer-nav__list {
+    flex-direction: column;
+    align-items: start;
+    padding: 0.5rem;
+  }
+
+  .footer-nav__link {
+    line-height: 1.4;
+  }
+}
