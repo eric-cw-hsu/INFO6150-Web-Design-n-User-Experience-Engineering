@@ -13,7 +13,7 @@ const toggleError = (field) => {
 }
 
 const injectErrorMessage = (field, message) => {
-  field.insertAdjacentHTML('afterend', `<div></div><div class="form-error-message">${message}</div>`);
+  field.insertAdjacentHTML('afterend', `<div class="form-error-message"></div><div class="form-error-message">${message}</div>`);
 }
 
 const formErrorHandler = (field, message) => {
@@ -23,7 +23,9 @@ const formErrorHandler = (field, message) => {
 
 const removeErrorMessages = (selector) => {
   if (document.querySelector(`${selector} ~ .form-error-message`) !== null) {
-    document.querySelector(`${selector} ~ .form-error-message`).remove();
+    document.querySelectorAll(`${selector} ~ .form-error-message`).forEach((errorBlock) => {
+      errorBlock.remove();
+    });
   }
 }
 
