@@ -1,0 +1,112 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #eeeeee;
+  border: 1px solid black;
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.card-title__h2 {
+  text-align: center;
+}
+
+.card-image__img {
+  width: 200px;
+  height: 200px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.subscribe-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.subscribe-popup__content {
+  background-color: white;
+  padding: 1rem;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subscribe-popup__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-popup__label--required {
+  font-style: italic;
+}
+
+.subscribe-popup__btn-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subscribe-popup__btn {
+  padding: 0.5rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+
+.subscribe-popup__btn--submit {
+  background-color: lime;
+}
+
+.subscribe-popup__btn--cancel {
+  background-color: lightcoral;
+}
+
+.subscribe-popup--active {
+  display: flex;
+}
+
+.form-error-message {
+  color: red;
+  font-style: italic;
+}
+
+
+@media (max-width: 44rem) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    align-items: start;
+  }
+}
