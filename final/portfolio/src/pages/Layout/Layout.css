@@ -4,7 +4,7 @@
   margin-left: auto;
   min-height: 100vh;
   box-sizing: border-box;
-  padding: 64px 5% 32px 5%;
+  padding: 60px 5% 32px 5%;
 }
 
 .container--dark {
@@ -31,5 +31,9 @@
   flex-direction: column;
   justify-content: start;
   align-items: start;
+
+  box-sizing: border-box; 
+  height: calc(100vh - 120px);
+  padding-top: 60px;
 }
 

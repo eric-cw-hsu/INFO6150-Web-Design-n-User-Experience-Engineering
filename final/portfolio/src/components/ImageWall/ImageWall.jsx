@@ -5,11 +5,8 @@ import { ScrollContext } from '../../lib/ScrollObserver';
 import SpeechBubble from '../SpeechBubble/SpeechBubble';
 
 const ImageWall = () => {
-  const { scrollY } = useContext(ScrollContext);
-
-
   return (
-    <header>
+    <div id="image-wall" className="image-wall">
       <div className="profile-shout-out">
         <SpeechBubble >Seeking for Software Developer Role</SpeechBubble>
       </div>
@@ -20,8 +17,7 @@ const ImageWall = () => {
           <p className='profile__text__p'>We only live once, just give it a shot!</p>
         </div>
       </div>
-    </header>
-
+    </div>
   );
 }
 

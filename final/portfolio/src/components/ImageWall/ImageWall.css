@@ -1,3 +1,6 @@
+.image-wall {
+  height: 80vh;
+}
 .profile {
   height: 400px;
   display: flex;

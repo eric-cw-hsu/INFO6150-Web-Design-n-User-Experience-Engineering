@@ -5,14 +5,25 @@ import AboutMe from '../../components/AboutMe/AboutMe';
 import ImageWall from '../../components/ImageWall/ImageWall';
 import WorkExperience from '../../components/WorkExperience/WorkExperience';
 import Contact from '../Contact/Contact';
+import FadeOutWrapper from '../../components/FadeOutWrapper/FadeOutWrapper';
+import FadeInWrapper from '../../components/FadeInWrapper/FadeInWrapper';
 
 const Home = () => {
   return (
     <div className="home">
-      <ImageWall />
-      <AboutMe />
-      <WorkExperience />
-      <Contact />
+
+      <FadeOutWrapper>
+        <ImageWall />
+      </FadeOutWrapper>
+      <FadeInWrapper>
+        <AboutMe />
+      </FadeInWrapper>
+      <FadeInWrapper>
+        <WorkExperience />
+      </FadeInWrapper>
+      <FadeInWrapper>
+        <Contact />
+      </FadeInWrapper>
     </div>
   );
 }
