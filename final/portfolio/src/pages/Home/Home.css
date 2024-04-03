@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  padding: 0px 15% 0px 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 0px 5% 0px 5%;
+  }
+  
+}

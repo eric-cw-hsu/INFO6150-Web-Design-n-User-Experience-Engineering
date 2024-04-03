@@ -1,0 +1,107 @@
+.form-control {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.required-hint-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.required-hint-container p {
+  font-size: 0.8rem;
+}
+
+.required-asterisk {
+  color: red;
+}
+
+.form-label-container {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  margin-right: 8px;
+}
+
+.form-input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.form-input-container input {
+  width: 100%;
+}
+
+.form-input-container textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-input-container input:-webkit-autofill,
+.form-input-container input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+.form-input-container input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
+.form-input-container--dark * {
+  color: white;
+}
+
+.form-input-container--light * {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  color: black;
+}
+
+.form-label--dark {
+  color: white;
+
+}
+
+.form-error {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.form-error__icon {
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-error__icon svg {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 4px;
+}
+
+.form-error p {
+  color: red;
+  font-size: 0.8rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .form-control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-label-container {
+    justify-content: start;
+    margin-right: 0;
+  }
+
+  .form-input-container {
+    justify-content: start;
+  }
+}

@@ -1,0 +1,28 @@
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+  height: 300px;
+}
+
+.about-me__h1 {
+  margin: 0;
+  font-style: italic;
+}
+
+.about-me__p {
+  text-align: start;
+}
+
+.flashing {
+  animation: flash 1s infinite;
+  font-size: 1.5em;
+}

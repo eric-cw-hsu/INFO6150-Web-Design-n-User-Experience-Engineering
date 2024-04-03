@@ -1,0 +1,67 @@
+.profile {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile__img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+.profile__text {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.profile__text__h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.profile__text__p {
+  font-size: 1.5rem;
+}
+
+
+.profile-shout-out {
+  position: relative;
+  top: 110px;
+  left: -50px;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile__img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .profile__text__h1 {
+    font-size: 2.5rem;
+  }
+
+  .profile__text__p {
+    font-size: 1.2rem;
+  }
+
+  .profile-shout-out {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
