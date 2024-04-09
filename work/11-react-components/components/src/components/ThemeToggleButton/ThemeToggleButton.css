@@ -1,0 +1,39 @@
+.theme-toggle-btn {
+  cursor: pointer;
+
+  padding: 0;
+  margin: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+.theme-toggle-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle-btn:focus {
+  transition: ease-out 0.3s;
+}
+
+.theme-toggle-btn--light {
+  background-color: #000;
+  color: #fff;
+}
+
+.theme-toggle-btn--light .img {
+  color: #fff;
+}
+
+.theme-toggle-btn--dark {
+  background-color: #FCF3CF;
+  color: #000;
+}
+
+.theme-toggle-btn--dark .img {
+  color: #000;
+}
