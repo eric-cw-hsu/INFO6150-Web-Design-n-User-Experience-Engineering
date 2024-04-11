@@ -5,6 +5,7 @@ import RequiredHintField from '../Form/RequiredHintField';
 import AlertModal from '../AlertModal/AlertModal';
 import { ThemeContext } from '../../lib/ThemeProvider';
 import PropTypes from 'prop-types';
+import Button from '../Button/Button';
 
 const ContactForm = ({ setShowModal, setModalMessage }) => {
   const { theme } = useContext(ThemeContext);
@@ -88,7 +89,9 @@ const ContactForm = ({ setShowModal, setModalMessage }) => {
 
       <RequiredHintField />
 
-      <button className={`form__submit-button form__submit-button--${theme}`} type="submit" onClick={submitHandler}>Submit</button>
+      <Button className={`form__submit-button form__submit-button--${theme}`} visual="primary" type="submit" onClickHandler={submitHandler}>
+        Submit
+      </Button>
     </form>
   );
 }

@@ -5,12 +5,13 @@ import './Button.css';
 const Button = ({
   visual,
   type,
+  className,
   children,
   onClickHandler
 }) => {
   return (
     <button
-      className={`btn-${visual}`}
+      className={`btn-${visual} ${className ? className : ""}`}
       type={type}
       onClick={onClickHandler}
     >
@@ -21,6 +22,7 @@ const Button = ({
 
 Button.prototype = {
   visual: PropTypes.string.isRequired,
+  className: PropTypes.string,
   type: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   onClickHandler: PropTypes.func
