@@ -31,7 +31,6 @@ const Project = () => {
               </li>
             </ul>
           )}
-          link="/"
         />
         <Card
           title="Medal Life (Startup)"
@@ -45,7 +44,6 @@ const Project = () => {
               </li>
             </ul>
           )}
-          link="/"
         />
         <Card
           position="right"
@@ -60,7 +58,6 @@ const Project = () => {
               </li>
             </ul>
           )}
-          link="/"
         />
       </div>
     </div>

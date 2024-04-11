@@ -5,6 +5,7 @@ import Project from './pages/Project/Project'
 import Navbar from './components/Navbar/Navbar'
 import { ThemeContext } from './lib/ThemeProvider'
 import Footer from './components/Footer/Footer'
+import Bio from './pages/Bio/Bio'
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -17,8 +18,9 @@ function App() {
       </header>
       <main>
         <div className={`container container--${theme}`}>
-          {page === '/' && <Home setPage={setPage} />}
-          {page === '/project' && <Project setPage={setPage} />}
+          {page === '/' && <Home />}
+          {page === '/project' && <Project />}
+          {page === '/bio' && <Bio />}
         </div>
       </main>
 

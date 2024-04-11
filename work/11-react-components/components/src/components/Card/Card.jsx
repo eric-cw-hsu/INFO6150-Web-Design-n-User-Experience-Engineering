@@ -11,12 +11,17 @@ const Card = ({ title, description, image, link, position = "left" }) => {
     <div className="card">
       <div className={`card-body card-body--${position}`}>
         <div className="card-title">
-          <Button visual="link" type="button">
+          <Button visual="link" type="button" onClickHandler={() => {
+            if (link) {
+              window.open(link, "_blank");
+            }
+
+          }} >
             <h3>{title}</h3>
           </Button>
         </div>
 
-        <a href={link}>
+        <a href={link} target="_blank">
           <div className={`card-image ${!image && `card-image--empty card-image--empty--${theme}`}`}>
             {image
               ? <img className="card-image__img" src={image} alt={title} />
@@ -35,7 +40,7 @@ Card.protoTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
   image: PropTypes.string,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
   position: PropTypes.string,
 };
 

@@ -59,8 +59,8 @@ const NavbarLink = ({ changePage }) => {
             </div>
             <div className="nav-links__links">
               {isMobile && <a className="nav-links__a" href="/" onClick={linkOnClickHandler}>Home</a>}
+              <a className="nav-links__a" href="/bio" onClick={linkOnClickHandler}>Bio</a>
               <a className="nav-links__a" href="/project" onClick={linkOnClickHandler}>Project</a>
-              <a className="nav-links__a" href="/work" onClick={linkOnClickHandler}>Work</a>
               <a className="nav-links__a" href="https://www.github.com/eric-cw-hsu">Github</a>
               <a className="nav-links__a" href="https://www.linkedin.com/in/erichsu1224">LinkedIn</a>
             </div>
