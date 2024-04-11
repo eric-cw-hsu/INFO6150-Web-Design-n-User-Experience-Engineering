@@ -39,19 +39,11 @@
 
   box-sizing: border-box; 
   min-height: calc(100vh - 120px);
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

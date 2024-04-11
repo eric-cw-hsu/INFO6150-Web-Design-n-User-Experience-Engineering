@@ -32,6 +32,12 @@ const NavbarLink = ({ changePage }) => {
     document.body.style.overflow = 'auto';
   }
 
+  const linkOnClickHandler = (e) => {
+    e.preventDefault();
+    changePage(e);
+    closeNav();
+  }
+
 
   return (
     <div className="nav-links-container">
@@ -52,8 +58,9 @@ const NavbarLink = ({ changePage }) => {
               }
             </div>
             <div className="nav-links__links">
-              <a className="nav-links__a" href="/project" onClick={changePage}>Project</a>
-              <a className="nav-links__a" href="/contact">Contact</a>
+              {isMobile && <a className="nav-links__a" href="/" onClick={linkOnClickHandler}>Home</a>}
+              <a className="nav-links__a" href="/project" onClick={linkOnClickHandler}>Project</a>
+              <a className="nav-links__a" href="/work" onClick={linkOnClickHandler}>Work</a>
               <a className="nav-links__a" href="https://www.github.com/eric-cw-hsu">Github</a>
               <a className="nav-links__a" href="https://www.linkedin.com/in/erichsu1224">LinkedIn</a>
             </div>
