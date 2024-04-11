@@ -19,7 +19,7 @@ function App() {
       <main>
         <div className={`container container--${theme}`}>
           {page === '/' && <Home />}
-          {page === '/project' && <Project />}
+          {page === '/project' && <Project setPage={setPage} />}
           {page === '/bio' && <Bio />}
         </div>
       </main>

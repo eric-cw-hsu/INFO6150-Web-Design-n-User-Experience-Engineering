@@ -2,8 +2,9 @@ import React from 'react';
 import Card from '../../components/Card/Card';
 import './Project.css';
 import shortTermStockTrendPredictionImage from '../../assets/short-term_stock-trend_prediction_using_meta-learning.png';
+import AssignmentCard from '../../components/AssignmentCard/AssignmentCard';
 
-const Project = () => {
+const Project = ({ setPage }) => {
   return (
     <div className="project">
       <div className="project-title">
@@ -12,6 +13,13 @@ const Project = () => {
 
 
       <div className="card-container">
+        <AssignmentCard
+          title="The is a LINK"
+          description="This is a card that is trying to fit the requirements for the assignment 11. The card is a simple card that has a title, description, and an image. The image is a placeholder image that is used when the image is not available. The card is a simple card that has a title, description, and an image. The image is a placeholder image that is used when the image is not available. The card is a simple card that has a title, description, and an image. The image is a placeholder image that is used when the image is not available. The card is a simple card that has a title, description, and an image. The image is a placeholder image that is used when the image is not available."
+          image={shortTermStockTrendPredictionImage}
+          link=""
+          onClickHandler={() => setPage('/')}
+        />
         <Card
           title="Short-Term Stock-Trend Prediction Using Meta-Learning"
           description={(<p>Although conventional machine learning algorithms have been widely adopted for stock-price predictions in recent years, the massive volume of specific labeled data required are not always available. In contrast, meta-learning technology uses relatively small amounts of training data, called fast learners. Such methods are beneficial under conditions of limited data availability, which often obtain for trend prediction based on time-series data limited by sparse information. In this study, we consider short-term stock price prediction using a meta-learning framework with several convolutional neural networks, including the temporal convolution network, fully convolutional network, and residual neural network. We propose a sliding time horizon to label stocks according to their predicted price trends, referred to as called slope-detection labeling, using prediction labels including "rise plus," "rise," "fall," and "fall plus". The effectiveness of the proposed meta-learning framework was evaluated by application to the S&P500. The experimental results show that the inclusion of the proposed meta-learning framework significantly improved both regular and balanced prediction accuracy and profitability.</p>)}
