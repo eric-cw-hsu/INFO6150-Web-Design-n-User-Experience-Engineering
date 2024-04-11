@@ -31,6 +31,24 @@
   text-align: left;
 }
 
+.assignment-card-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%
+
+}
+
+.assignment-card-button__btn {
+  padding: 6px 8px;
+}
+
+.assignment-card-button__btn p {
+  font-size: 0.8rem;
+  color: inherit
+}
+
 @media screen and (max-width: 768px) {
   .assignment-card-image__img {
     width: 100%;

@@ -17,6 +17,15 @@ const AssignmentCard = ({ title, description, image, onClickHandler }) => {
           <p className="assignment-card-content__p">{description}</p>
         </div>
       </div>
+
+      <div className="assignment-card-button">
+        <Button
+          className="assignment-card-button__btn"
+          visual="button" type="button" onClickHandler={onClickHandler}
+        >
+          <p>Read more</p>
+        </Button>
+      </div>
     </div>
   );
 }
