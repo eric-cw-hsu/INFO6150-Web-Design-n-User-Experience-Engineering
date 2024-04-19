@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import './FormGroup.css';
-import { errorIcon } from '../../../lib/IconDictionary';
-import { ThemeContext } from '../../../lib/ThemeProvider';
+import { errorIcon } from '../../lib/IconDictionary';
+import { ThemeContext } from '../../lib/ThemeProvider';
 
 
 const FormGroup = ({

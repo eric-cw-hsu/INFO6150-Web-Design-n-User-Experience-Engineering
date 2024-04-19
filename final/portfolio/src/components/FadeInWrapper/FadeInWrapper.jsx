@@ -11,7 +11,6 @@ const FadeInWrapper = ({ children }) => {
   let containerScrollProgress = 100;
   if (containerElement) {
     const { offsetTop, clientHeight } = containerElement;
-    console.log(scrollY, offsetTop, clientHeight, window.innerHeight);
     const halfH = window.innerHeight / 2;
     containerScrollProgress = Math.min(
       ((scrollY - offsetTop + 2 * halfH) * 100) / clientHeight,
@@ -22,7 +21,7 @@ const FadeInWrapper = ({ children }) => {
   return (
     <div
       ref={containerRef}
-      style={{ opacity: `${containerScrollProgress}%` }}
+      style={{ opacity: `${containerScrollProgress}%`, width: '100%' }}
     >
       {children}
     </div>

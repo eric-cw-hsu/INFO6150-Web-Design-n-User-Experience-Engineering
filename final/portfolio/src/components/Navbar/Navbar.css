@@ -42,6 +42,21 @@
   text-decoration: none;
 }
 
+.primary-nav-logo {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primary-nav-logo--dark {
+  color: #fff;
+}
+
+.primary-nav-logo--light {
+  color: black;
+}
+
 .primary-nav-links {
   display: flex;
   justify-content: center;

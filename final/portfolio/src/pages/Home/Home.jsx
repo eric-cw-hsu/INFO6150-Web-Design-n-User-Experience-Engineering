@@ -4,9 +4,10 @@ import profileImg from '../../assets/profile.svg';
 import AboutMe from '../../components/AboutMe/AboutMe';
 import ImageWall from '../../components/ImageWall/ImageWall';
 import WorkExperience from '../../components/WorkExperience/WorkExperience';
-import Contact from '../Contact/Contact';
+import Contact from '../../components/Contact/Contact';
 import FadeOutWrapper from '../../components/FadeOutWrapper/FadeOutWrapper';
 import FadeInWrapper from '../../components/FadeInWrapper/FadeInWrapper';
+import Skill from '../../components/Skill/Skill';
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
         <AboutMe />
       </FadeInWrapper>
       <FadeInWrapper>
-        <WorkExperience />
+        <Skill />
       </FadeInWrapper>
       <FadeInWrapper>
         <Contact />

@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
-import FormGroup from './FormGroup/FormGroup';
-import './Form.css';
-import RequiredHintField from './FormGroup/RequiredHintField';
+import FormGroup from '../Form/FormGroup';
+import './ContactForm.css';
+import RequiredHintField from '../Form/RequiredHintField';
 import AlterModal from '../AlertModal/AlterModal';
 import { ThemeContext } from '../../lib/ThemeProvider';
 
-const Form = () => {
+const ContactForm = () => {
   const { theme } = useContext(ThemeContext);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -31,9 +31,6 @@ const Form = () => {
 
     if (res.ok) {
       setModalMessage('Thank you for contacting me! I will get back to you as soon as possible.');
-      setName('');
-      setEmail('');
-      setMessage('');
     } else {
       setModalMessage('There was an error sending your message. Please try again later.');
     }
@@ -73,6 +70,9 @@ const Form = () => {
     e.preventDefault();
 
     if (validate()) {
+      setName('');
+      setEmail('');
+      setMessage('');
       fetchEmailService();
     }
 
@@ -93,4 +93,4 @@ const Form = () => {
   );
 }
 
-export default Form;
+export default ContactForm;

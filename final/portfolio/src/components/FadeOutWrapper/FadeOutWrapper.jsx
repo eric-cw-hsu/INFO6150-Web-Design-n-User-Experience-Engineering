@@ -15,9 +15,6 @@ const FadeOutWrapper = ({ children }) => {
     containerOpacity = 100 - Math.min(scrollY * 100 / clientHeight, 100) * 1.3
   }
 
-  console.log(containerTranslateY, containerOpacity)
-
-
   return (
     <div
       ref={containerRef}

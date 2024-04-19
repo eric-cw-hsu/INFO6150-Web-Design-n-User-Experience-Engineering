@@ -1,0 +1,15 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 32px;
+  margin-top: 32px;
+  padding: 0 -5%;
+}
+
+.skill-block-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 32px;
+}

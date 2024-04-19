@@ -40,6 +40,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .image-wall {
+    padding-top: 50px;
+    height: 50vh;
+  }
+
   .profile {
     height: 200px;
     display: flex;

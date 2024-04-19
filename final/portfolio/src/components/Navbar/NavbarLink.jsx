@@ -3,10 +3,11 @@ import './NavbarLink.css';
 import useResponsiveDetector from '../../lib/ResponsiveDetector';
 import { ThemeContext } from '../../lib/ThemeProvider';
 import { closeIcon, menuIcon } from '../../lib/IconDictionary';
+import PropTypes from 'prop-types';
 
 
 
-const NavbarLink = () => {
+const NavbarLink = ({ changePage }) => {
   const [navOpen, setNavOpen] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
   const { theme } = useContext(ThemeContext);
@@ -31,6 +32,12 @@ const NavbarLink = () => {
     document.body.style.overflow = 'auto';
   }
 
+  const linkOnClickHandler = (e) => {
+    e.preventDefault();
+    changePage(e);
+    closeNav();
+  }
+
 
   return (
     <div className="nav-links-container">
@@ -51,8 +58,9 @@ const NavbarLink = () => {
               }
             </div>
             <div className="nav-links__links">
-              <a className="nav-links__a" href="#projects">Projects</a>
-              <a className="nav-links__a" href="#contact">Contact</a>
+              {isMobile && <a className="nav-links__a" href="/" onClick={linkOnClickHandler}>Home</a>}
+              <a className="nav-links__a" href="/bio" onClick={linkOnClickHandler}>Bio</a>
+              <a className="nav-links__a" href="/project" onClick={linkOnClickHandler}>Project</a>
               <a className="nav-links__a" href="https://www.github.com/eric-cw-hsu">Github</a>
               <a className="nav-links__a" href="https://www.linkedin.com/in/erichsu1224">LinkedIn</a>
             </div>
@@ -65,5 +73,9 @@ const NavbarLink = () => {
     </div >
   );
 }
+
+NavbarLink.propTypes = {
+  changePage: PropTypes.func.isRequired,
+};
 
 export default NavbarLink;

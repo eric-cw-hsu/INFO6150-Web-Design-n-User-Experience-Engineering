@@ -26,3 +26,9 @@
   animation: flash 1s infinite;
   font-size: 1.5em;
 }
+
+@media screen and (max-width: 768px){
+  .about-me {
+    height: 40vh;
+  }
+}
