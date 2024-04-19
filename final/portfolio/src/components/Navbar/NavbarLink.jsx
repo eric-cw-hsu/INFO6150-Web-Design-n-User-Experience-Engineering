@@ -4,6 +4,9 @@ import useResponsiveDetector from '../../lib/ResponsiveDetector';
 import { ThemeContext } from '../../lib/ThemeProvider';
 import { closeIcon, menuIcon } from '../../lib/IconDictionary';
 import PropTypes from 'prop-types';
+import githubWhiteIcon from '../../assets/github-mark-white.png';
+import githubBlackIcon from '../../assets/github-mark.png';
+import linkedinIcon from '../../assets/linkedin-mark.png';
 
 
 
@@ -61,8 +64,15 @@ const NavbarLink = ({ changePage }) => {
               {isMobile && <a className="nav-links__a" href="/" onClick={linkOnClickHandler}>Home</a>}
               <a className="nav-links__a" href="/bio" onClick={linkOnClickHandler}>Bio</a>
               <a className="nav-links__a" href="/project" onClick={linkOnClickHandler}>Project</a>
-              <a className="nav-links__a" href="https://www.github.com/eric-cw-hsu">Github</a>
-              <a className="nav-links__a" href="https://www.linkedin.com/in/erichsu1224">LinkedIn</a>
+              <a className="nav-links__a" href="/blog" onClick={linkOnClickHandler}>Blog</a>
+              <a className="nav-links__a" href="https://www.github.com/eric-cw-hsu">
+                <img src={
+                  theme === 'dark' ? githubWhiteIcon : githubBlackIcon
+                } alt="github logo" className="nav-links__img" />
+              </a>
+              <a className="nav-links__a" href="https://www.linkedin.com/in/erichsu1224">
+                <img src={linkedinIcon} alt="linkedin logo" className="nav-links__img" />
+              </a>
             </div>
           </div>
         </div>

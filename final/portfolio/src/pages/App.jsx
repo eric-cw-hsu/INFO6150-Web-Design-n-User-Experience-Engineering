@@ -6,6 +6,7 @@ import Footer from '../components/Footer/Footer';
 import { useContext, useState } from 'react';
 import Bio from './Bio/Bio';
 import Project from './Project/Project';
+import Blog from './Blog/Blog';
 
 const App = () => {
 
@@ -25,6 +26,7 @@ const App = () => {
           {page === '/' && <Home />}
           {page === '/project' && <Project setPage={setPage} />}
           {page === '/bio' && <Bio />}
+          {page === '/blog' && <Blog />}
         </div>
       </main>
 
