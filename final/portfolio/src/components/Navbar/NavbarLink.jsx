@@ -66,12 +66,18 @@ const NavbarLink = ({ changePage }) => {
               <a className="nav-links__a" href="/project" onClick={linkOnClickHandler}>Project</a>
               <a className="nav-links__a" href="/blog" onClick={linkOnClickHandler}>Blog</a>
               <a className="nav-links__a" href="https://www.github.com/eric-cw-hsu">
-                <img src={
-                  theme === 'dark' ? githubWhiteIcon : githubBlackIcon
-                } alt="github logo" className="nav-links__img" />
+                {isMobile
+                  ? "Github"
+                  : <img src={
+                    theme === 'dark' ? githubWhiteIcon : githubBlackIcon
+                  } alt="github logo" className="nav-links__img" />
+                }
               </a>
               <a className="nav-links__a" href="https://www.linkedin.com/in/erichsu1224">
-                <img src={linkedinIcon} alt="linkedin logo" className="nav-links__img" />
+                {isMobile
+                  ? "LinkedIn"
+                  : <img src={linkedinIcon} alt="linkedin logo" className="nav-links__img" />
+                }
               </a>
             </div>
           </div>
