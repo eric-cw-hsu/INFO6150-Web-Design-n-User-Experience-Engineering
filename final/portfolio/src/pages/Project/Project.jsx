@@ -7,7 +7,7 @@ const Project = ({ setPage }) => {
   return (
     <div className="project">
       <div className="project-title">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
       </div>
 
 

@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Bio.css';
+import { ThemeContext } from '../../lib/ThemeProvider';
 
 const Bio = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
     <div className="bio">
       <div className="bio-title">
-        <h2>Who am I?</h2>
+        <h1>Who am I?</h1>
       </div>
 
       <div className="bio-container">
         <div className="work-experience">
-          <h3 className="section-title__h3">Work Experience</h3>
+          <h2 className={`section-title__h2 section-title__h2--${theme}`}>Work Experience</h2>
           <div className="bio-section-container">
             <div>
               <div className="bio-title-date">
-                <h4>Back-end Developer</h4>
+                <h3>Back-end Developer</h3>
                 <p className="bio-date">
                   Sep 2022 - Apr 2023
                 </p>
@@ -30,7 +33,7 @@ const Bio = () => {
             </div>
             <div>
               <div className="bio-title-date">
-                <h4>Research Assistant</h4>
+                <h3>Research Assistant</h3>
                 <p className="bio-date">
                   Sep 2019 - Aug 2021
                 </p>
@@ -51,11 +54,11 @@ const Bio = () => {
           </div>
         </div>
         <div className="education">
-          <h3 className='section-title__h3'>Education</h3>
+          <h2 className={`section-title__h2 section-title__h2--${theme}`}>Education</h2>
           <div className="bio-section-container">
             <div>
               <div className="bio-title-date">
-                <h4>Northeaster University</h4>
+                <h3>Northeaster University</h3>
                 <p className="bio-date">
                   Jan 2024 - Dec 2025 (Expected)
                 </p>
@@ -66,7 +69,7 @@ const Bio = () => {
             </div>
             <div>
               <div className="bio-title-date">
-                <h4>Fu Jen Catholic University</h4>
+                <h3>Fu Jen Catholic University</h3>
                 <p className="bio-date">
                   Sep 2017 - June 2021
                 </p>

@@ -11,11 +11,13 @@
 }
 
 .required-hint-container p {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .required-asterisk {
   color: red;
+  margin-right: 2px;
 }
 
 .form-label-container {
@@ -34,12 +36,15 @@
 
 .form-input-container input {
   width: 100%;
+  font-size: 1rem;
+  line-height: 1.2rem;;
 }
 
 .form-input-container textarea {
   width: 100%;
   resize: vertical;
   min-height: 100px;
+  font-size: 1rem;
 }
 
 .form-input-container input:-webkit-autofill,
@@ -58,6 +63,12 @@
   background-color: white;
   border: 1px solid #e0e0e0;
   color: black;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+
 }
 
 .form-label--dark {
@@ -86,7 +97,7 @@
 
 .form-error p {
   color: red;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 

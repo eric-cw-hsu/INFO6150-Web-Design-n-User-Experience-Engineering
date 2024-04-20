@@ -22,6 +22,7 @@ const FadeOutWrapper = ({ children }) => {
         transform: `translateY(${containerTranslateY}%)`,
         opacity: `${containerOpacity}%`
       }}
+      className='w-full'
     >
       {children}
     </div>

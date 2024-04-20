@@ -38,12 +38,12 @@
 
 
 .card-description p {
-  /* color: black; */
   margin: 0;
   font-size: 0.8rem;
   text-align: left;
 
   max-height: 100px;
+  font-weight: 600;
 }
 
 .card-description ul {

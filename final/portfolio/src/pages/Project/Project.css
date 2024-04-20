@@ -4,13 +4,13 @@
 
 .project-title {
   width: 100%;
-  margin: 20px 0px;;
+  margin: 32px 0 16px 0px;
 }
 
-.project-title h2 {
+.project-title h1 {
   margin: 0;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 3.2rem;
 }
 
 .card-container {

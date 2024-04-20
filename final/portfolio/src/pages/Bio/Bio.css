@@ -3,10 +3,11 @@
 }
 
 .bio-title {
+  margin-top: 32px;
   margin-bottom: 16px;
 }
 
-.bio-title h2 {
+.bio-title h1 {
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -30,18 +31,19 @@
 }
 
 .bio-date {
-  font-size: 0.8rem;
+  font-size: 1.1rem;
 }
 
 .bio-institute {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .bio-content {
   margin: 0;
-  font-size: 0.8rem;
-  text-align: left;;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 600; 
 }
 
 @media screen and (max-width: 768px) {
@@ -53,7 +55,11 @@
     margin-left: 0px;
   }
 
-  .section-title__h3 {
+  .section-title__h2 {
     border-bottom: 1px solid #000;
+  }
+
+  .section-title__h2--dark {
+    border-bottom: 1px solid white;
   }
 }

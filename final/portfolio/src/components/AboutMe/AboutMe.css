@@ -10,16 +10,18 @@
   justify-content: start;
   align-items: start;
   gap: 16px;
-  height: 60vh;
+  min-height: 60vh;
+  margin-top: 60px;
 }
 
-.about-me__h1 {
+.about-me__h2 {
   margin: 0;
   font-style: italic;
 }
 
 .about-me__p {
   text-align: start;
+  font-size: 1.2rem;
 }
 
 .flashing {
@@ -30,5 +32,9 @@
 @media screen and (max-width: 768px){
   .about-me {
     height: 40vh;
+  }
+
+  .about-me h2 {
+    font-size: 1.6rem;
   }
 }
