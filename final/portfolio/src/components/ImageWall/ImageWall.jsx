@@ -1,8 +1,5 @@
-import React, { useContext } from 'react';
-import profileImg from '../../assets/profile.svg';
-import './ImageWall.css';
-import { ScrollContext } from '../../lib/ScrollObserver';
-import SpeechBubble from '../SpeechBubble/SpeechBubble';
+import profileImg from "../../assets/profile.svg";
+import "./ImageWall.css";
 
 const ImageWall = () => {
   return (
@@ -10,12 +7,14 @@ const ImageWall = () => {
       <div className="profile h-full">
         <img className="profile__img" src={profileImg} alt="profile" />
         <div className="profile__text">
-          <h1 className='profile__text__h1'>It&apos;s now or never!!</h1>
-          <p className='profile__text__p text-center'>We only live once, just give it a shot!</p>
+          <h1 className="profile__text__h1">It&apos;s now or never!</h1>
+          <p className="profile__text__p text-center">
+            We only live once, just give it a shot!
+          </p>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default ImageWall;
