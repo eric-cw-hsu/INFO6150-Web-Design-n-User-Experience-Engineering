@@ -1,0 +1,141 @@
+.primary-nav-btn {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links__a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.nav-links__links {
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .primary-nav-btn {
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .nav-links__close {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+    margin-bottom: 8px;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0vw;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    width: 100vw;
+    height: 100vh;
+
+    animation: fadeIn 1.5s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      right: -100vw;
+    }
+    to {
+      right: 0;
+    }
+  }
+
+  .nav-links--fade-out {
+    animation: fadeOut 1.5s ease;
+  }
+
+  @keyframes fadeOut {
+    from {
+      right: 0;
+    }
+    to {
+      right: -100vw;
+    }
+  }
+
+
+  .nav-links__links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-links__close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    
+    background-color: white;
+    color: black;
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .nav-links__close-btn--dark {
+    background-color: #1d1d1d;
+    color: rgb(206, 206, 206);
+  }
+
+  .nav-links__close-btn--light {
+    background-color: #fdfaf0;
+    color: #000;
+  }
+
+  .nav-links__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 80vw;
+    height: 100vh;
+
+    box-shadow: -3px 1px 3px 0 rgb(0 0 0 / 40%);
+    padding: 16px;
+
+    
+    background-color: rgb(255, 255, 255, 100%);
+  }
+
+  .nav-links__content--dark {
+    background-color: #1d1d1d;
+    color: #fff;
+  }
+
+  .nav-links__content--light {
+    background-color: #fdfaf0;
+    color: #000;
+  }
+
+
+}

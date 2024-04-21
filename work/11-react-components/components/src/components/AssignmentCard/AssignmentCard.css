@@ -1,0 +1,58 @@
+.assignment-card {
+  box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 30%);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.assignment-card-title {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.assignment-card-image__img {
+  width: 200px;
+  position: relative;
+  float: right;
+
+  margin-left: 16px;
+}
+
+.assignment-card-title__h3 {
+  margin: 0;
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.assignment-card-content__p {
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.assignment-card-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
+  width: 100%
+
+}
+
+.assignment-card-button__btn {
+  padding: 6px 8px;
+}
+
+.assignment-card-button__btn p {
+  font-size: 0.8rem;
+  color: inherit
+}
+
+@media screen and (max-width: 768px) {
+  .assignment-card-image__img {
+    width: 100%;
+    margin: 16px 0px;
+  }
+  
+}

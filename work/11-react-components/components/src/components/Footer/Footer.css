@@ -1,0 +1,14 @@
+footer {
+  font-size: 0.8rem;
+  padding: 8px 0px;
+}
+
+.footer--light {
+  background-color: white;
+  color: #696969;
+}
+
+.footer--dark {
+  background-color: dark;
+  color: #cfcfcf;
+}

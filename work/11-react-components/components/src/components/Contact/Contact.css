@@ -1,0 +1,20 @@
+.contact-container {
+  width: 100%;
+  gap: 16px;
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.contact-modal-button {
+  padding: 0px 4px;
+  font-size: 0.8rem;
+}
+
+.contact-modal-button--dark {
+  background-color: #fff;
+  color: black;
+}
