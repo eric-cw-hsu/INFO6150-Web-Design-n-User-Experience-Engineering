@@ -36,7 +36,7 @@
 }
 
 .primary-nav-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
@@ -47,6 +47,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.primary-nav-logo svg {
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .primary-nav-logo--dark {
