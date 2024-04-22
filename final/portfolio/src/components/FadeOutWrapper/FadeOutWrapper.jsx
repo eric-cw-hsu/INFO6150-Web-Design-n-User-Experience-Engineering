@@ -11,8 +11,8 @@ const FadeOutWrapper = ({ children }) => {
 
   if (containerElement) {
     const { clientHeight } = containerElement
-    containerTranslateY = Math.min(scrollY * 50 / clientHeight, 25)
-    containerOpacity = 100 - Math.min(scrollY * 100 / clientHeight, 100) * 1.3
+    containerTranslateY = Math.min(scrollY * 60 / clientHeight, 50)
+    containerOpacity = 100 - Math.min(scrollY * 100 / clientHeight, 100) * 1.2
   }
 
   return (
