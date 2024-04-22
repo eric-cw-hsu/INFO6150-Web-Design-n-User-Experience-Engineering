@@ -5,9 +5,12 @@ import { ThemeContext } from '../../lib/ThemeProvider';
 import NavbarLink from './NavbarLink';
 import { iconImg } from '../../lib/IconDictionary';
 import PropTypes from 'prop-types';
+import useResponsiveDetector from '../../lib/ResponsiveDetector';
 
 const Navbar = ({ setPage }) => {
   const { theme } = useContext(ThemeContext);
+  const isMobile = useResponsiveDetector();
+
   const changePage = (e) => {
     e.preventDefault();
     setPage(
@@ -29,7 +32,7 @@ const Navbar = ({ setPage }) => {
 
         <div className="primary-nav-links">
           <NavbarLink changePage={changePage} />
-          <ThemeToggleButton class="theme-toggle-btn" />
+          {!isMobile && <ThemeToggleButton />}
         </div>
       </div>
     </nav>

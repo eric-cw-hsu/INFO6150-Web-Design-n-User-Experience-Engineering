@@ -8,13 +8,18 @@ const ThemeToggleButton = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <button className={`theme-toggle-btn theme-toggle-btn--${theme}`} onClick={toggleTheme}>
-      {theme === 'dark'
-        ? sunIcon
-        : moonIcon
-      }
-    </button >
-  );
+    <label class="switch">
+      <input type="checkbox" onClick={toggleTheme} />
+      <span class="slider round">
+        <div className={`slider-icon slider-icon-${theme}`}>
+          {theme === 'dark'
+            ? moonIcon
+            : sunIcon}
+        </div>
+      </span>
+
+    </label>
+  )
 }
 
 export default ThemeToggleButton;
