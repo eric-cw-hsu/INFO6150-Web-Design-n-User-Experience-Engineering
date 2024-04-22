@@ -131,11 +131,6 @@
     left: 0;
     box-sizing: border-box;
     max-height: 200px;
-    /* position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-height: 100px; */
   }
 
   .card-description--right {

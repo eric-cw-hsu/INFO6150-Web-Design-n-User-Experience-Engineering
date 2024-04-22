@@ -20,7 +20,6 @@
 @media screen and (max-width: 768px){
   .blog-card-title-date {
     flex-direction: column;
-    /* gap: 8px; */
     align-items: start;;
     justify-content: start;
   }

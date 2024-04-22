@@ -10,7 +10,6 @@
 
 .alert-modal--dark {
   background-color: var(--background-color-dark);
-  /* color: #fff; */
 }
 
 .alert-modal--light {
