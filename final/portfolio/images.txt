@@ -1,0 +1,6 @@
+profile.svg: © Cheng-Wen Hsu
+github-mark.png: © 2024 GitHub, Inc.
+github-mark-white.png: © 2024 GitHub, Inc.
+linkedin-mark.png: © LinkedIn Corporation 2024
+short-term_stock-trend_prediction_using_meta-learning.png: © Cheng-Wen Hsu
+icon.svg: this svg adapted from https://css.gg under the MIT License

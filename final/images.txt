@@ -1,4 +1,0 @@
-profile.svg: Cheng-Wen Hsu all rights reserve
-github-mark.png: © 2024 GitHub, Inc.
-github-mark-white.png: © 2024 GitHub, Inc.
-linkedin-mark.png: © LinkedIn Corporation 2024
