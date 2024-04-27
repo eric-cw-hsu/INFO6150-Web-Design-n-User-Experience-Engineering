@@ -1,0 +1,51 @@
+.tag-filter-container {
+  gap: 8px;
+  border-radius: 8px;
+}
+
+.tag-filter-container::-webkit-scrollbar {
+  display: none;
+}
+
+.tag-filter-btn {
+  padding: 6px 16px;
+  border: 0;
+  text-wrap: nowrap;
+}
+
+.tag-filter-btn:hover {
+  animation: rotate 0.5s ease;
+}
+
+.blog-search-bar__input {
+  font-size: 1rem;  
+  line-height: 1.4rem;
+}
+
+.blog-search-bar__input--light {
+  background-color: #fdfaf0;
+  color: #000;
+  border: 1px solid #000;
+}
+
+
+@keyframes rotate {
+  /* the button rotates in a y-dimension */
+  0% {
+    transform: rotateY(0deg)
+  }
+  50% {
+    transform: rotateY(45deg);
+  }
+}
+
+.tag-filter {
+  gap: 8px;
+}
+
+.tag-filter-btn--selected {
+  background-color: #fff;
+  color: black;
+  border-radius: 8px;
+  border: 1px solid #000;
+}

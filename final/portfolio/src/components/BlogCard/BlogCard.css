@@ -1,0 +1,26 @@
+.blog-card {
+  padding: 16px;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  gap: 8px;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 40%);
+  box-sizing: border-box;
+}
+
+.blog-card--light {
+  background-color: #fdfaf0;
+  color: #000;
+}
+
+.tags {
+  margin-top: 8px;
+  gap: 8px;
+}
+
+@media screen and (max-width: 768px){
+  .blog-card-title-date {
+    flex-direction: column;
+    align-items: start;;
+    justify-content: start;
+  }
+}

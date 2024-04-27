@@ -1,0 +1,65 @@
+.bio {
+  padding: 0px 15%;
+}
+
+.bio-title {
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.bio-title h1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4rem;
+  margin: 0;
+  text-align: start;
+}
+
+.bio-section-container {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bio-title-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bio-date {
+  font-size: 1.1rem;
+}
+
+.bio-institute {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.bio-content {
+  margin: 0;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 600; 
+}
+
+@media screen and (max-width: 768px) {
+  .bio {
+    padding: 0;
+  }
+
+  .bio-section-container {
+    margin-left: 0px;
+  }
+
+  .section-title__h2 {
+    border-bottom: 1px solid #000;
+  }
+
+  .section-title__h2--dark {
+    border-bottom: 1px solid white;
+  }
+}

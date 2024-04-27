@@ -1,0 +1,21 @@
+.skills-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.skill-block-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-block-container {
+    grid-template-columns: 1fr;
+  }
+  
+}

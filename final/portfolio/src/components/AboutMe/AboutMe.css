@@ -1,0 +1,40 @@
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 16px;
+  min-height: 60vh;
+  margin-top: 60px;
+}
+
+.about-me__h2 {
+  margin: 0;
+  font-style: italic;
+}
+
+.about-me__p {
+  text-align: start;
+  font-size: 1.2rem;
+}
+
+.flashing {
+  animation: flash 1s infinite;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px){
+  .about-me {
+    height: 40vh;
+  }
+
+  .about-me h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,62 @@
+.alert-modal {
+  position: fixed;
+  top: 68px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  opacity: 0.95;
+  padding: 8px;
+  width: 200px;
+}
+
+.alert-modal--dark {
+  background-color: var(--background-color-dark);
+}
+
+.alert-modal--light {
+  background-color: var(--background-color-light);
+  color: #000;
+}
+
+
+.alert-modal-content h3 {
+  margin: 0;
+}
+
+.alert-modal-content p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.alert-modal-close-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 4px;
+}
+
+.alert-modal-close-button--light {
+  background-color: var(--background-color-light);
+  color: #000;
+}
+
+.alert-modal-close-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.alert-modal--fade-out {
+  animation: fadeOut 2s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

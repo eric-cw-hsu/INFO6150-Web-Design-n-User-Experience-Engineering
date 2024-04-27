@@ -1,0 +1,20 @@
+.project {
+  padding: 0px 10%;
+}
+
+.project-title {
+  width: 100%;
+  margin: 32px 0 16px 0px;
+}
+
+.project-title h1 {
+  margin: 0;
+  text-align: left;
+  font-size: 3.2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
